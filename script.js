@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Open WhatsApp with pre-filled message
-            window.open(`https://wa.me/918012626111?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/918012626222?text=${encodedMessage}`, '_blank');
             
             // Optional: Reset form after submission
             contactForm.reset();
