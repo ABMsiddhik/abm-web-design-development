@@ -222,12 +222,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = document.getElementById('message').value;
             
             // Format WhatsApp message
-const whatsappMessage = `Hi ABM IT Support,\n\nI'm interested in your **${service}** services.\n\n**Name:** ${name}\n**Phone:** ${phone}\n\n**Project Details:**\n${message}\n\nPlease contact me to discuss further.`;            
-            // Encode message for URL
+const whatsappMessage = `Hi ABM IT Support,\n\nI'm interested in your *${service}* services.\n\n*Name:* ${name}\n*Phone:* ${phone}\n\n*Project Details:*\n${message}\n\nPlease contact me to discuss further.`;            // Encode message for URL
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Open WhatsApp with pre-filled message
-            window.open(`https://wa.me/918012626222?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/918248794519?text=${encodedMessage}`, '_blank');
             
             // Optional: Reset form after submission
             contactForm.reset();
