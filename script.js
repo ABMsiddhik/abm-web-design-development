@@ -226,7 +226,7 @@ const whatsappMessage = `Hi ABM IT Support,\n\nI'm interested in your *${service
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Open WhatsApp with pre-filled message
-            window.open(`https://wa.me/918248794519?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/918012626222?text=${encodedMessage}`, '_blank');
             
             // Optional: Reset form after submission
             contactForm.reset();
