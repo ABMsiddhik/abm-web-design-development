@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -223,7 +223,7 @@
                                 <div
                                     class="aspect-video bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl p-6 relative overflow-hidden">
                                     <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
-                                    <div class="relative z-10">
+                                    <div class="relative z-10 h-full flex flex-col justify-center">
                                         <div class="flex justify-between items-center mb-6">
                                             <div class="w-8 h-8 rounded-full bg-white/20"></div>
                                             <div class="flex space-x-2">
@@ -232,12 +232,17 @@
                                                 <div class="w-2 h-2 rounded-full bg-white/40"></div>
                                             </div>
                                         </div>
-                                        <div class="space-y-3">
-                                            <div class="h-3 bg-white/30 rounded w-3/4"></div>
-                                            <div class="h-3 bg-white/20 rounded w-1/2"></div>
-                                            <div class="h-3 bg-white/25 rounded w-2/3"></div>
+                                        <div class="text-center p-4">
+                                            <p class="text-white text-xl font-semibold mb-2">Guaranteed Results</p>
+                                            <p class="text-white/90 text-sm">Our services will definitely<br>give a
+                                                return on investment.</p>
                                         </div>
-                                        <div class="mt-6 h-16 bg-white/10 rounded-lg"></div>
+                                        <div class="mt-auto">
+                                            <div class="h-16 bg-white/10 rounded-lg flex items-center justify-center">
+                                                <span class="text-white/80 text-sm font-medium">Let's grow your
+                                                    business</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -248,167 +253,176 @@
         </div>
     </section>
 
+
     <!-- Services Section -->
-    <section id="services" class="py-24 px-6 bg-gray-50 dark:bg-dark-800 relative">
+    <section id="services" class="py-16 md:py-24 px-4 sm:px-6 bg-gray-50 dark:bg-dark-800 relative">
         <div class="container mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">
+            <div class="text-center mb-12 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6">
                     Our <span class="gradient-text">Services</span>
                 </h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                     Complete digital solutions designed to elevate your business and engage your audience
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 max-w-7xl mx-auto">
                 <!-- Design Services -->
-                <div class="space-y-8">
-                    <div class="flex items-center space-x-4 mb-8">
-                        <div class="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center">
-                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                <div class="space-y-6 md:space-y-8">
+                    <div class="flex items-center space-x-3 md:space-x-4 mb-6 md:mb-8">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl gradient-bg flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-lg md:text-xl"></i>
                         </div>
-                        <h3 class="text-3xl font-display font-bold gradient-text">Design Services</h3>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold gradient-text">Design Services</h3>
                     </div>
 
-                    <div class="space-y-6">
+                    <div class="space-y-4 md:space-y-6">
                         <!-- UI/UX Design -->
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-palette text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-palette text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         UI/UX Design</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Beautiful, intuitive interfaces that enhance user experience and drive
                                         engagement through thoughtful design.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Visual
+                                    class="px-2 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">Visual
                                     Appeal</span>
                                 <span
-                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">User
+                                    class="px-2 py-1 text-xs sm:text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full font-medium">User
                                     Flows</span>
                                 <span
-                                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Brand
+                                    class="px-2 py-1 text-xs sm:text-sm bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full font-medium">Brand
                                     Alignment</span>
                             </div>
                         </div>
 
                         <!-- Responsive Design -->
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-mobile-alt text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-mobile-alt text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         Responsive Design</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Websites that look stunning and function flawlessly across all devices and
                                         screen sizes.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Mobile
+                                    class="px-2 py-1 text-xs sm:text-sm bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full font-medium">Mobile
                                     Optimized</span>
                                 <span
-                                    class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full text-sm font-medium">Tablet
+                                    class="px-2 py-1 text-xs sm:text-sm bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full font-medium">Tablet
                                     Ready</span>
                                 <span
-                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Desktop
+                                    class="px-2 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">Desktop
                                     Perfect</span>
                             </div>
                         </div>
 
                         <!-- Landing Pages -->
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-rocket text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-rocket text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         Landing Page Design</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         High-converting landing pages designed to maximize your marketing ROI and drive
                                         results.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium">Lead
+                                    class="px-2 py-1 text-xs sm:text-sm bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full font-medium">Lead
                                     Generation</span>
                                 <span
-                                    class="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-sm font-medium">Campaign
+                                    class="px-2 py-1 text-xs sm:text-sm bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full font-medium">Campaign
                                     Focused</span>
                                 <span
-                                    class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-medium">Conversion
+                                    class="px-2 py-1 text-xs sm:text-sm bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full font-medium">Conversion
                                     Optimized</span>
                             </div>
                         </div>
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+
+                        <!-- Mobile-First Design -->
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-mobile text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-mobile text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         Mobile-First Design</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Priority mobile experience with seamless desktop adaptation, ensuring perfect
                                         display on all devices.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">Touch
+                                    class="px-2 py-1 text-xs sm:text-sm bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full font-medium">Touch
                                     Friendly</span>
                                 <span
-                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Fast
+                                    class="px-2 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">Fast
                                     Loading</span>
                                 <span
-                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Simplified
+                                    class="px-2 py-1 text-xs sm:text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full font-medium">Simplified
                                     Navigation</span>
                             </div>
                         </div>
 
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <!-- Dark/Light Themes -->
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-adjust text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-adjust text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         Dark/Light Themes</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Dual theme designs that adapt to user preferences, reducing eye strain and
                                         improving accessibility.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-gray-100 dark:bg-gray-900/30 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">User
+                                    class="px-2 py-1 text-xs sm:text-sm bg-gray-100 dark:bg-gray-900/30 text-gray-700 dark:text-gray-300 rounded-full font-medium">User
                                     Preference</span>
                                 <span
-                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Brand
+                                    class="px-2 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">Brand
                                     Consistent</span>
                                 <span
-                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Auto
+                                    class="px-2 py-1 text-xs sm:text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full font-medium">Auto
                                     Switching</span>
                             </div>
                         </div>
@@ -416,818 +430,1002 @@
                 </div>
 
                 <!-- Development Services -->
-                <div class="space-y-8">
-                    <div class="flex items-center space-x-4 mb-8">
-                        <div class="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center">
-                            <i class="fas fa-code text-white text-xl"></i>
+                <div class="space-y-6 md:space-y-8">
+                    <div class="flex items-center space-x-3 md:space-x-4 mb-6 md:mb-8">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl gradient-bg flex items-center justify-center">
+                            <i class="fas fa-code text-white text-lg md:text-xl"></i>
                         </div>
-                        <h3 class="text-3xl font-display font-bold gradient-text">Development Services</h3>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold gradient-text">Development Services</h3>
                     </div>
 
-                    <div class="space-y-6">
+                    <div class="space-y-4 md:space-y-6">
                         <!-- Static Websites -->
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-bolt text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-bolt text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
-                                        Static Websites</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                        Static Websites | 5-7 Pages Max</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Fast, secure and cost-effective websites perfect for businesses that need a
                                         strong online presence.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-sm font-medium">Lightning
+                                    class="px-2 py-1 text-xs sm:text-sm bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full font-medium">Lightning
                                     Fast</span>
                                 <span
-                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Secure</span>
+                                    class="px-2 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">Secure</span>
                                 <span
-                                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Low
+                                    class="px-2 py-1 text-xs sm:text-sm bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full font-medium">Low
                                     Maintenance</span>
                             </div>
                         </div>
 
                         <!-- Dynamic Websites -->
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-cogs text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-cogs text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
-                                        Dynamic Websites</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                        Dynamic Websites | Unlimited Pages</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Feature-rich websites with advanced functionality, content management and
                                         interactive elements.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 rounded-full text-sm font-medium">Easy
+                                    class="px-2 py-1 text-xs sm:text-sm bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 rounded-full font-medium">Easy
                                     Updates</span>
                                 <span
-                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">User
+                                    class="px-2 py-1 text-xs sm:text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full font-medium">User
                                     Accounts</span>
                                 <span
-                                    class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">Custom
+                                    class="px-2 py-1 text-xs sm:text-sm bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full font-medium">Custom
                                     Features</span>
                             </div>
                         </div>
 
                         <!-- E-commerce -->
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-shopping-cart text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-shopping-cart text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         E-commerce Solutions</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Complete online stores with product management, secure payments and inventory
                                         tracking.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm font-medium">Product
+                                    class="px-2 py-1 text-xs sm:text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">Product
                                     Catalog</span>
                                 <span
-                                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Secure
+                                    class="px-2 py-1 text-xs sm:text-sm bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full font-medium">Secure
                                     Payments</span>
                                 <span
-                                    class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full text-sm font-medium">Order
+                                    class="px-2 py-1 text-xs sm:text-sm bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full font-medium">Order
                                     Tracking</span>
                             </div>
                         </div>
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+
+                        <!-- Payment Gateway -->
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-credit-card text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-credit-card text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         Payment Gateway Integration</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Secure payment processing with multiple options including credit cards, digital
                                         wallets and bank transfers.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-medium">Stripe</span>
+                                    class="px-2 py-1 text-xs sm:text-sm bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full font-medium">Stripe</span>
                                 <span
-                                    class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium">PayPal</span>
+                                    class="px-2 py-1 text-xs sm:text-sm bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full font-medium">PayPal</span>
                                 <span
-                                    class="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-sm font-medium">Razorpay</span>
+                                    class="px-2 py-1 text-xs sm:text-sm bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full font-medium">Razorpay</span>
                             </div>
                         </div>
 
-                        <div class="service-card glass p-8 rounded-2xl group">
-                            <div class="flex items-start space-x-4 mb-6">
+                        <!-- WordPress -->
+                        <div class="service-card glass p-6 md:p-8 rounded-2xl group">
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-4 md:mb-6">
                                 <div
-                                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                                    <i class="fab fa-wordpress text-white text-xl"></i>
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="fab fa-wordpress text-white text-lg sm:text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                                    <h4
+                                        class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
                                         WordPress/CMS Development</h4>
-                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                                         Custom WordPress solutions with easy content management and powerful
                                         functionality.
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-1 sm:gap-2">
                                 <span
-                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Custom
+                                    class="px-2 py-1 text-xs sm:text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-medium">Custom
                                     Themes</span>
                                 <span
-                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Plugin
+                                    class="px-2 py-1 text-xs sm:text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full font-medium">Plugin
                                     Dev</span>
                                 <span
-                                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Easy
+                                    class="px-2 py-1 text-xs sm:text-sm bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full font-medium">Easy
                                     Updates</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-24 px-6 bg-dark-900 relative overflow-hidden">
-    <div class="container mx-auto">
-        <div class="text-center mb-20">
-            <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6 animate-fade-in-down">
-                Our <span class="gradient-text">Portfolio</span>
-            </h2>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                Explore our diverse range of completed projects across various industries, showcasing our expertise
-                in creating digital masterpieces.
-            </p>
-        </div>
-
-        <!-- Category Filter -->
-        <div class="relative">
-            <!-- Filter Dropdown for Mobile -->
-            <div class="relative md:hidden mb-6">
-                <button id="filterDropdownBtn" class="flex items-center px-4 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300 w-full justify-between">
-                    <span>Filter Projects</span>
-                    <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
-                </button>
-                
-                <div id="filterDropdown" class="absolute z-50 mt-2 w-full glass rounded-xl overflow-hidden hidden">
-                    <div class="flex flex-col">
-                        <button class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300 active" data-category="business">
-                            Business
-                        </button>
-                        <button class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300" data-category="school">
-                            School
-                        </button>
-                        <button class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300" data-category="hospital">
-                            Hospital
-                        </button>
-                        <button class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300" data-category="construction">
-                            Build Construction
-                        </button>
-                        <button class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300" data-category="supermarket">
-                            Super Market
-                        </button>
-                        <button class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300" data-category="news">
-                            News & Trust
-                        </button>
-                    </div>
-                </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-6 bg-dark-900 relative overflow-hidden">
+        <div class="container mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6 animate-fade-in-down">
+                    Our <span class="gradient-text">Portfolio</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Explore our diverse range of completed projects across various industries, showcasing our expertise
+                    in creating digital masterpieces.
+                </p>
             </div>
 
-            <!-- Category Filter Buttons (Desktop) -->
-            <div class="hidden md:flex flex-wrap justify-center gap-4 mb-12">
-                <button class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300 active bg-primary-500/20" data-category="business">
-                    <span class="gradient-text">Business</span>
-                </button>
-                <button class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300" data-category="school">
-                    <span class="gradient-text">School</span>
-                </button>
-                <button class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300" data-category="hospital">
-                    <span class="gradient-text">Hospital</span>
-                </button>
-                <button class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300" data-category="construction">
-                    <span class="gradient-text">Build Construction</span>
-                </button>
-                <button class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300" data-category="supermarket">
-                    <span class="gradient-text">Super Market</span>
-                </button>
-                <button class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300" data-category="news">
-                    <span class="gradient-text">News & Trust</span>
-                </button>
-            </div>
-        </div>
+            <!-- Category Filter -->
+            <div class="relative">
+                <!-- Filter Dropdown for Mobile -->
+                <div class="relative md:hidden mb-6">
+                    <button id="filterDropdownBtn"
+                        class="flex items-center px-4 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300 w-full justify-between">
+                        <span>Filter Projects</span>
+                        <i class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+                    </button>
 
-        <!-- Portfolio Grid -->
-        <div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            <!-- Business Projects -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500" data-category="business">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/krishna-sweets-and-bakery-thanjavur.png" 
-                         alt="Krishna Sweets & Bakery" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Krishna Sweets & Bakery</h3>
-                        <p class="text-sm opacity-90">Traditional sweet shop with online ordering</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Business</span>
-                    </div>
-                    <a href="https://krishnasweetsbakery.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Krishna Sweets Bakery website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                    <div id="filterDropdown" class="absolute z-50 mt-2 w-full glass rounded-xl overflow-hidden hidden">
+                        <div class="flex flex-col">
+                            <button
+                                class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300 active"
+                                data-category="business">
+                                Business
+                            </button>
+                            <button
+                                class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300"
+                                data-category="school">
+                                School
+                            </button>
+                            <button
+                                class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300"
+                                data-category="hospital">
+                                Hospital
+                            </button>
+                            <button
+                                class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300"
+                                data-category="construction">
+                                Build Construction
+                            </button>
+                            <button
+                                class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300"
+                                data-category="supermarket">
+                                Super Market
+                            </button>
+                            <button
+                                class="category-filter px-4 py-3 text-left font-semibold text-gray-300 hover:bg-primary-500/20 transition-all duration-300"
+                                data-category="news">
+                                News & Trust
+                            </button>
                         </div>
-                        <a href="https://krishnasweetsbakery.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
                     </div>
+                </div>
+
+                <!-- Category Filter Buttons (Desktop) -->
+                <div class="hidden md:flex flex-wrap justify-center gap-4 mb-12">
+                    <button
+                        class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300 active bg-primary-500/20"
+                        data-category="business">
+                        <span class="gradient-text">Business</span>
+                    </button>
+                    <button
+                        class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300"
+                        data-category="school">
+                        <span class="gradient-text">School</span>
+                    </button>
+                    <button
+                        class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300"
+                        data-category="hospital">
+                        <span class="gradient-text">Hospital</span>
+                    </button>
+                    <button
+                        class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300"
+                        data-category="construction">
+                        <span class="gradient-text">Build Construction</span>
+                    </button>
+                    <button
+                        class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300"
+                        data-category="supermarket">
+                        <span class="gradient-text">Super Market</span>
+                    </button>
+                    <button
+                        class="category-filter px-6 py-3 glass rounded-xl font-semibold text-gray-300 hover:bg-primary-500/20 hover:text-white transition-all duration-300"
+                        data-category="news">
+                        <span class="gradient-text">News & Trust</span>
+                    </button>
                 </div>
             </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500" data-category="business">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/bakery-desotta-thanjavur-cakes-in-thanjavur.png" 
-                         alt="Bakery De Sotta" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Bakery De Sotta</h3>
-                        <p class="text-sm opacity-90">Artisan bakery with product showcase</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Business</span>
-                    </div>
-                    <a href="https://bakerydesottatnj.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Bakery De Sotta website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+            <!-- Portfolio Grid -->
+            <div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Business Projects -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500"
+                    data-category="business">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/krishna-sweets-and-bakery-thanjavur.png" alt="New Krishna Sweets Bakery"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://bakerydesottatnj.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">New Krishna Sweets Bakery</h3>
+                            <p class="text-sm opacity-90">Traditional Southern-style bakery with online ordering and
+                                delivery</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-primary-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Business</span>
+                        </div>
+                        <a href="https://krishnasweetsbakery.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="View New Krishna Sweets Bakery website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://krishnasweetsbakery.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500" data-category="business">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/tancafe-coffe-shop-thanjavur.png" 
-                         alt="Tan Cafe" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Tan Cafe</h3>
-                        <p class="text-sm opacity-90">Cafe website with menu and ordering system</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Business</span>
-                    </div>
-                    <a href="https://www.tancafe.co.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Tan Cafe website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500"
+                    data-category="business">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/bakery-desotta-thanjavur-cakes-in-thanjavur.png"
+                            alt="Bakery De Sotta - Premium Cake Shop"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://www.tancafe.co.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Bakery De Sotta</h3>
+                            <p class="text-sm opacity-90">Premium cake shop with 21+ flavors & fast delivery in
+                                Thanjavur</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-primary-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Business</span>
+                        </div>
+                        <a href="https://bakerydesottatnj.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Bakery De Sotta website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://bakerydesottatnj.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- School Projects (hidden by default) -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="school">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/sjsv-villupuram.png" 
-                         alt="SJSV School" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">SJSV School</h3>
-                        <p class="text-sm opacity-90">School website with information portal</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">School</span>
-                    </div>
-                    <a href="https://sjsv.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View SJSV School website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500"
+                    data-category="business">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/tancafe-coffe-shop-thanjavur.png"
+                            alt="Tan Cafe - Coffee & Restaurant in Thanjavur"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://sjsv.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- School Projects Continued -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="school">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/tinyseedspreschool-pudukkottai.png" 
-                         alt="Tiny Seeds Preschool" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Tiny Seeds Preschool</h3>
-                        <p class="text-sm opacity-90">Early childhood education website</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">School</span>
-                    </div>
-                    <a href="https://www.tinyseedspreschool.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Tiny Seeds Preschool website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Tan Cafe</h3>
+                            <p class="text-sm opacity-90">Coffee shop offering pizzas, burgers, sandwiches & desserts in
+                                Thanjavur</p>
                         </div>
-                        <a href="https://www.tinyseedspreschool.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-primary-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Business</span>
+                        </div>
+                        <a href="https://www.tancafe.co.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Tan Cafe website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.tancafe.co.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="school">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/stmichaelmhssariyakudi-sivagangai.png" 
-                         alt="St. Michael MHSS" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">St. Michael MHSS</h3>
-                        <p class="text-sm opacity-90">Higher secondary school with admission system</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">School</span>
-                    </div>
-                    <a href="https://stmichaelmhssariyakudi.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View St. Michael MHSS website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                <!-- School Projects -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="school">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/sjsv-villupuram.png" alt="SJSV School Villupuram - Founded in 1995"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://stmichaelmhssariyakudi.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hospital Projects -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="hospital">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/kmclinics-trichy.png" 
-                         alt="KM Clinics" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">KM Clinics</h3>
-                        <p class="text-sm opacity-90">Multi-specialty healthcare center</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Hospital</span>
-                    </div>
-                    <a href="https://kmclinics.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View KM Clinics website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-red-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">SJSV School Villupuram</h3>
+                            <p class="text-sm opacity-90">Established 1995, providing quality education with spiritual
+                                values</p>
                         </div>
-                        <a href="https://kmclinics.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="hospital">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/kannan-hospital-pudukkottai.png" 
-                         alt="Kannan Hospital" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Kannan Hospital</h3>
-                        <p class="text-sm opacity-90">Full-service hospital with telemedicine</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Hospital</span>
-                    </div>
-                    <a href="https://www.kannanhospital.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Kannan Hospital website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-red-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-green-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">School</span>
                         </div>
-                        <a href="https://www.kannanhospital.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <a href="https://sjsv.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit SJSV School website"></a>
                     </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="hospital">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/team-hospital-pudukkottai.png" 
-                         alt="Team Hospital" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Team Hospital</h3>
-                        <p class="text-sm opacity-90">Online appointment booking system</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Hospital</span>
-                    </div>
-                    <a href="https://www.teamhospital.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Team Hospital website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-red-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                            </div>
+                            <a href="https://sjsv.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
                         </div>
-                        <a href="https://www.teamhospital.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Construction Projects -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="construction">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/sp-associates-pudukkottai.png" 
-                         alt="SP Associates" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">SP Associates</h3>
-                        <p class="text-sm opacity-90">Construction company portfolio</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Construction</span>
-                    </div>
-                    <a href="https://spassociatess.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View SP Associates website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                <!-- Tiny Seeds Preschool -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="school">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/tinyseedspreschool-pudukkottai.png" alt="Tiny Seeds Preschool Pudukkottai"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://spassociatess.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="construction">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/us-construction-trichy.png" 
-                         alt="US Construction" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">US Construction</h3>
-                        <p class="text-sm opacity-90">Building and infrastructure development</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Construction</span>
-                    </div>
-                    <a href="https://usconstruction.co.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View US Construction website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Tiny Seeds Preschool</h3>
+                            <p class="text-sm opacity-90">Premium early education with scientifically designed
+                                curriculum</p>
                         </div>
-                        <a href="https://usconstruction.co.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="construction">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/selva-construction-pudukkottai.png" 
-                         alt="Selva Constructions" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Selva Constructions</h3>
-                        <p class="text-sm opacity-90">Project management and tracking system</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Construction</span>
-                    </div>
-                    <a href="https://selvaconstructions.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Selva Constructions website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-green-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">School</span>
                         </div>
-                        <a href="https://selvaconstructions.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <a href="https://www.tinyseedspreschool.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Tiny Seeds Preschool website"></a>
                     </div>
-                </div>
-            </div>
-
-            <!-- Supermarket Projects -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="supermarket">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/ppds-thanjavur.png" 
-                         alt="PPDS Retail" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">PPDS Retail</h3>
-                        <p class="text-sm opacity-90">Grocery e-commerce platform</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Super Market</span>
-                    </div>
-                    <a href="https://www.ppdsretail.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View PPDS Retail website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.tinyseedspreschool.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
                         </div>
-                        <a href="https://www.ppdsretail.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="supermarket">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/mahalakshmi-plazza-villupuram.png" 
-                         alt="Magha Lakshmi Plaazaa" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Magha Lakshmi Plaazaa</h3>
-                        <p class="text-sm opacity-90">Inventory management system</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Super Market</span>
-                    </div>
-                    <a href="https://maghalakshmiplaazaa.in/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Magha Lakshmi Plaazaa website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                <!-- St. Michael MHSS -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="school">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/stmichaelmhssariyakudi-sivagangai.png" alt="St. Michael MHSS Ariyakudi"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://maghalakshmiplaazaa.in/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">St. Michael MHSS</h3>
+                            <p class="text-sm opacity-90">Value-based education from KG to 12th standard</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-green-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">School</span>
+                        </div>
+                        <a href="https://stmichaelmhssariyakudi.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit St. Michael MHSS website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                            </div>
+                            <a href="https://stmichaelmhssariyakudi.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="supermarket">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/sri-samayapurathal-kumbakonam.png" 
-                         alt="Sri Samayapuram Temple Needs" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Sri Samayapuram Temple Needs</h3>
-                        <p class="text-sm opacity-90">Loyalty program and e-commerce</p>
+                <!-- KM Clinics -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="hospital">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/kmclinics-trichy.png"
+                            alt="KM Clinics Trichy - Multi-Specialty Healthcare Center"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">KM Clinics Trichy</h3>
+                            <p class="text-sm opacity-90">Distinguished multi-specialty facility with exceptional
+                                medical services</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-red-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Hospital</span>
+                        </div>
+                        <a href="https://kmclinics.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit KM Clinics website"></a>
                     </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Super Market</span>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-red-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                            </div>
+                            <a href="https://kmclinics.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
-                    <a href="https://srisamayapurathaltempleneeds.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Sri Samayapuram Temple Needs website"></a>
                 </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+
+                <!-- Kannan Hospital -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="hospital">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/kannan-hospital-pudukkottai.png"
+                            alt="Kannan Hospital Pudukkottai - Orthopedic Specialists"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Kannan Hospital</h3>
+                            <p class="text-sm opacity-90">State-of-the-art orthopedic and multi-specialty center</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-red-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Hospital</span>
+                        </div>
+                        <a href="https://www.kannanhospital.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Kannan Hospital website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-red-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.kannanhospital.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Hospital -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="hospital">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/team-hospital-pudukkottai.png"
+                            alt="Team Hospital Pudukkottai - 50-Bed Multi-Specialty Facility"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Team Hospital</h3>
+                            <p class="text-sm opacity-90">50-bed multi-specialty facility with patient-centered care</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-red-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Hospital</span>
+                        </div>
+                        <a href="https://www.teamhospital.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Team Hospital website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-red-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.teamhospital.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Construction Projects -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="construction">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/sp-associates-pudukkottai.png"
+                            alt="SP Associates Pudukkottai - Construction Specialists"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">SP Associates</h3>
+                            <p class="text-sm opacity-90">Leading construction specialists in Pudukkottai</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-orange-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Construction</span>
+                        </div>
+                        <a href="https://spassociatess.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit SP Associates website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://spassociatess.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="construction">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/us-construction-trichy.png"
+                            alt="US Construction Trichy - Building & Development Experts"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">US Construction</h3>
+                            <p class="text-sm opacity-90">Decade-long expertise in building development in Trichy</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-orange-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Construction</span>
+                        </div>
+                        <a href="https://usconstruction.co.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit US Construction website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://usconstruction.co.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="construction">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/selva-construction-pudukkottai.png"
+                            alt="Selva Constructions - Established 1999"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Selva Constructions</h3>
+                            <p class="text-sm opacity-90">Leading builders in Tamil Nadu since 1999</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-orange-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Construction</span>
+                        </div>
+                        <a href="https://selvaconstructions.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Selva Constructions website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://selvaconstructions.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospital Projects -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="hospital">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/kmclinics-trichy.png"
+                            alt="KM Clinics Trichy - Multi-Specialty Healthcare Center"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">KM Clinics Trichy</h3>
+                            <p class="text-sm opacity-90">Distinguished multi-specialty facility with exceptional
+                                medical services</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-red-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Hospital</span>
+                        </div>
+                        <a href="https://kmclinics.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit KM Clinics website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-red-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                            </div>
+                            <a href="https://kmclinics.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="hospital">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/kannan-hospital-pudukkottai.png"
+                            alt="Kannan Hospital Pudukkottai - Orthopedic Specialists"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Kannan Hospital</h3>
+                            <p class="text-sm opacity-90">State-of-the-art orthopedic and multi-specialty center</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-red-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Hospital</span>
+                        </div>
+                        <a href="https://www.kannanhospital.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Kannan Hospital website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-red-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.kannanhospital.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="hospital">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/team-hospital-pudukkottai.png"
+                            alt="Team Hospital Pudukkottai - 50-Bed Multi-Specialty Facility"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Team Hospital</h3>
+                            <p class="text-sm opacity-90">50-bed multi-specialty facility with patient-centered care</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-red-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Hospital</span>
+                        </div>
+                        <a href="https://www.teamhospital.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Team Hospital website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-red-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.teamhospital.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Supermarket Projects -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="supermarket">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/ppds-thanjavur.png" alt="PPDS Retail - Legacy Department Store Since 1910"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">PPDS Retail</h3>
+                            <p class="text-sm opacity-90">Century-old department store with multi-brand retail outlets
+                            </p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-pink-600/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Super
+                                Market</span>
+                        </div>
+                        <a href="https://www.ppdsretail.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit PPDS Retail website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://www.ppdsretail.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="supermarket">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/mahalakshmi-plazza-villupuram.png"
+                            alt="Magha Lakshmi Plaazaa - Villupuram's Premier Shopping Mall"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Magha Lakshmi Plaazaa</h3>
+                            <p class="text-sm opacity-90">Villupuram's first hypermarket with multi-brand shopping
+                                experience</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-pink-600/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Super
+                                Market</span>
+                        </div>
+                        <a href="https://maghalakshmiplaazaa.in/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Magha Lakshmi Plaazaa website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://maghalakshmiplaazaa.in/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="supermarket">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/sri-samayapurathal-kumbakonam.png"
+                            alt="Sri Samayapuram Temple Needs - 54 Years of Trust"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Sri Samayapuram Temple Needs</h3>
+                            <p class="text-sm opacity-90">Specialized temple products & pooja items since 1968</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-pink-600/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">Super
+                                Market</span>
                         </div>
                         <a href="https://srisamayapurathaltempleneeds.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                            class="absolute inset-0 z-10" aria-label="Visit Sri Samayapuram Temple Needs website"></a>
                     </div>
-                </div>
-            </div>
-
-            <!-- News & Trust Projects -->
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="news">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/aaraichimani-news.png" 
-                         alt="Aaraichi Mani" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Aaraichi Mani</h3>
-                        <p class="text-sm opacity-90">Regional news portal</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">News & Trust</span>
-                    </div>
-                    <a href="https://aaraichimani.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Aaraichi Mani website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+                            </div>
+                            <a href="https://srisamayapurathaltempleneeds.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
                         </div>
-                        <a href="https://aaraichimani.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="news">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/galaxy-power-systems-chidambaram.png" 
-                         alt="Galaxy Power System" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Galaxy Power System</h3>
-                        <p class="text-sm opacity-90">Trust and donation platform</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">News & Trust</span>
-                    </div>
-                    <a href="https://galaxypowersystem.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Galaxy Power System website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                <!-- News & Trust Projects -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="news">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/aaraichimani-news.png"
+                            alt="Aaraichi Mani News Portal - Local to Global Tamil News"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://galaxypowersystem.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Aaraichi Mani</h3>
+                            <p class="text-sm opacity-90">Comprehensive Tamil news portal covering local to global
+                                events</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-indigo-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">News
+                                & Trust</span>
+                        </div>
+                        <a href="https://aaraichimani.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Aaraichi Mani News website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                            </div>
+                            <a href="https://aaraichimani.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden" data-category="news">
-                <div class="aspect-video relative overflow-hidden">
-                    <img src="./images/apeka-panpattu-iyakkam-pudukkottai.png" 
-                         alt="Apekapi" 
-                         class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-xl font-bold mb-2">Apekapi</h3>
-                        <p class="text-sm opacity-90">Community blog and news platform</p>
-                    </div>
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">News & Trust</span>
-                    </div>
-                    <a href="https://apekapi.com/" target="_blank" 
-                       class="absolute inset-0 z-10" 
-                       aria-label="View Apekapi website"></a>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <div class="flex space-x-2">
-                            <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
-                            <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="news">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/galaxy-power-systems-chidambaram.png"
+                            alt="Galaxy Power Systems - No.1 Battery Service Center in Chidambaram"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                         </div>
-                        <a href="https://apekapi.com/" target="_blank"
-                            class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                            View Project →
-                        </a>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Galaxy Power Systems</h3>
+                            <p class="text-sm opacity-90">Authorized Exide battery service center with 24/7 support</p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-indigo-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">News
+                                & Trust</span>
+                        </div>
+                        <a href="https://galaxypowersystem.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit Galaxy Power Systems website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                            </div>
+                            <a href="https://galaxypowersystem.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl glass hover:scale-105 transition-all duration-500 hidden"
+                    data-category="news">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./images/apeka-panpattu-iyakkam-pudukkottai.png"
+                            alt="APEKA Panpattu Iyakkam - Social Justice Organization"
+                            class="w-full h-full object-cover rounded-t-2xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">APEKA Panpattu Iyakkam</h3>
+                            <p class="text-sm opacity-90">25+ years promoting social justice and equality in Pudukkottai
+                            </p>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="px-3 py-1 bg-indigo-500/90 backdrop-blur-sm rounded-full text-white text-xs font-bold shadow-lg">News
+                                & Trust</span>
+                        </div>
+                        <a href="https://apekapi.com/" target="_blank" class="absolute inset-0 z-10"
+                            aria-label="Visit APEKA Panpattu Iyakkam website"></a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 bg-blue-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-purple-400 rounded-full"></span>
+                                <span class="w-3 h-3 bg-teal-400 rounded-full"></span>
+                            </div>
+                            <a href="https://apekapi.com/" target="_blank"
+                                class="text-primary-600 hover:text-primary-700 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                                View Project →
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-    <!-- Process Section -->
     <section id="process" class="py-24 px-6 bg-gray-50 dark:bg-dark-800 relative">
         <div class="container mx-auto">
             <div class="text-center mb-20">
@@ -1250,9 +1448,14 @@
                     <!-- Step 1 -->
                     <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
                         <div class="lg:w-1/2 lg:pr-12 text-center lg:text-right">
-                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300 relative">
+                                <!-- Mobile Icon -->
                                 <div
-                                    class="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
+                                    class="lg:hidden absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-lightbulb text-2xl text-white"></i>
+                                </div>
+                                <div
+                                    class="hidden lg:inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
                                     01
                                 </div>
                                 <h3 class="text-2xl font-bold mb-4 gradient-text">Discovery & Strategy</h3>
@@ -1276,7 +1479,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-1/2 lg:pl-12">
+                        <div class="lg:w-1/2 lg:pl-12 hidden lg:block">
                             <div class="relative">
                                 <div class="w-full h-64 glass rounded-2xl p-8 flex items-center justify-center">
                                     <i class="fas fa-lightbulb text-6xl gradient-text floating-element"></i>
@@ -1288,9 +1491,14 @@
                     <!-- Step 2 -->
                     <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8">
                         <div class="lg:w-1/2 lg:pl-12 text-center lg:text-left">
-                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300 relative">
+                                <!-- Mobile Icon -->
                                 <div
-                                    class="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
+                                    class="lg:hidden absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-palette text-2xl text-white"></i>
+                                </div>
+                                <div
+                                    class="hidden lg:inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
                                     02
                                 </div>
                                 <h3 class="text-2xl font-bold mb-4 gradient-text">Design & Prototype</h3>
@@ -1314,7 +1522,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-1/2 lg:pr-12">
+                        <div class="lg:w-1/2 lg:pr-12 hidden lg:block">
                             <div class="relative">
                                 <div class="w-full h-64 glass rounded-2xl p-8 flex items-center justify-center">
                                     <i class="fas fa-palette text-6xl gradient-text floating-element"
@@ -1327,9 +1535,14 @@
                     <!-- Step 3 -->
                     <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
                         <div class="lg:w-1/2 lg:pr-12 text-center lg:text-right">
-                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300 relative">
+                                <!-- Mobile Icon -->
                                 <div
-                                    class="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
+                                    class="lg:hidden absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-code text-2xl text-white"></i>
+                                </div>
+                                <div
+                                    class="hidden lg:inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
                                     03
                                 </div>
                                 <h3 class="text-2xl font-bold mb-4 gradient-text">Development & Build</h3>
@@ -1353,7 +1566,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-1/2 lg:pl-12">
+                        <div class="lg:w-1/2 lg:pl-12 hidden lg:block">
                             <div class="relative">
                                 <div class="w-full h-64 glass rounded-2xl p-8 flex items-center justify-center">
                                     <i class="fas fa-code text-6xl gradient-text floating-element"
@@ -1366,9 +1579,14 @@
                     <!-- Step 4 -->
                     <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8">
                         <div class="lg:w-1/2 lg:pl-12 text-center lg:text-left">
-                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300">
+                            <div class="glass p-8 rounded-2xl hover:scale-105 transition-all duration-300 relative">
+                                <!-- Mobile Icon -->
                                 <div
-                                    class="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
+                                    class="lg:hidden absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-rocket text-2xl text-white"></i>
+                                </div>
+                                <div
+                                    class="hidden lg:inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl text-white text-2xl font-bold mb-6">
                                     04
                                 </div>
                                 <h3 class="text-2xl font-bold mb-4 gradient-text">Launch & Support</h3>
@@ -1392,7 +1610,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-1/2 lg:pr-12">
+                        <div class="lg:w-1/2 lg:pr-12 hidden lg:block">
                             <div class="relative">
                                 <div class="w-full h-64 glass rounded-2xl p-8 flex items-center justify-center">
                                     <i class="fas fa-rocket text-6xl gradient-text floating-element"
@@ -1666,31 +1884,31 @@
                 <div>
                     <h4 class="text-white font-bold mb-6">Services</h4>
                     <ul class="space-y-3">
-                        <li><a href="#"
+                        <li><a href="#services"
                                 class="hover:text-primary-400 transition-colors duration-300 flex items-center group">
                                 <i
                                     class="fas fa-arrow-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
                                 Web Design
                             </a></li>
-                        <li><a href="#"
+                        <li><a href="#services"
                                 class="hover:text-primary-400 transition-colors duration-300 flex items-center group">
                                 <i
                                     class="fas fa-arrow-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
                                 Web Development
                             </a></li>
-                        <li><a href="#"
+                        <li><a href="#services"
                                 class="hover:text-primary-400 transition-colors duration-300 flex items-center group">
                                 <i
                                     class="fas fa-arrow-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
                                 E-commerce Solutions
                             </a></li>
-                        <li><a href="#"
+                        <li><a href="#services"
                                 class="hover:text-primary-400 transition-colors duration-300 flex items-center group">
                                 <i
                                     class="fas fa-arrow-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
                                 WordPress Development
                             </a></li>
-                        <li><a href="#"
+                        <li><a href="#services"
                                 class="hover:text-primary-400 transition-colors duration-300 flex items-center group">
                                 <i
                                     class="fas fa-arrow-right mr-2 text-xs group-hover:translate-x-1 transition-transform"></i>
@@ -1745,12 +1963,13 @@
         </div>
     </footer>
     <!-- Go to Top Button -->
-    <button id="goToTopBtn"
+    <button type="button" id="goToTopBtn"
         class="fixed bottom-6 right-6 glass p-4 rounded-full text-white hover:scale-110 transition-all duration-300 z-50"
         title="Go to Top">
         <i class="fas fa-arrow-up text-xl"></i>
     </button>
- <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
