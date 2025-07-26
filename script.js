@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById('mobileMenuButton');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const visibleItems = Array.from(portfolioItems)
             .filter(item => !item.classList.contains('hidden') && item.getAttribute('data-category') === category)
             .slice(0, 3);
-        
+
         portfolioItems.forEach(item => {
             if (!visibleItems.includes(item)) {
                 item.classList.add('hidden');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedText = activeFilter.textContent.trim();
             const span = filterDropdownBtn.querySelector('span');
             if (span) span.textContent = selectedText;
-            
+
             // Close dropdown
             if (filterDropdown) {
                 filterDropdown.classList.add('hidden');
@@ -151,22 +151,22 @@ document.addEventListener('DOMContentLoaded', function() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const iframe = entry.target;
-                    
+
                     // Check if the iframe already has a src (to prevent double loading)
                     if (!iframe.src) {
                         // Create a temporary div to check if the URL can be iframed
                         const tempDiv = document.createElement('div');
                         tempDiv.innerHTML = `<iframe src="${iframe.dataset.src}" style="display:none"></iframe>`;
                         document.body.appendChild(tempDiv);
-                        
+
                         // Check if the iframe loaded successfully
-                        tempDiv.querySelector('iframe').onload = function() {
+                        tempDiv.querySelector('iframe').onload = function () {
                             iframe.src = iframe.dataset.src;
                             document.body.removeChild(tempDiv);
                             observer.unobserve(iframe);
                         };
-                        
-                        tempDiv.querySelector('iframe').onerror = function() {
+
+                        tempDiv.querySelector('iframe').onerror = function () {
                             // If iframe fails to load, show a fallback message
                             const container = iframe.closest('.portfolio-item');
                             if (container) {
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
             });
-        }, {rootMargin: '200px'}); // Start loading when 200px away from viewport
+        }, { rootMargin: '200px' }); // Start loading when 200px away from viewport
 
         iframes.forEach(iframe => {
             iframeObserver.observe(iframe);
@@ -213,21 +213,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact Form Submission with WhatsApp integration
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
-            
+
             // Format WhatsApp message
-const whatsappMessage = `Hi ABM IT Support,\n\nI'm interested in your *${service}* services.\n\n*Name:* ${name}\n*Phone:* ${phone}\n\n*Project Details:*\n${message}\n\nPlease contact me to discuss further.`;            // Encode message for URL
+            const whatsappMessage = `Hi ABM IT Support,\n\nI'm interested in your *${service}* services.\n\n*Name:* ${name}\n*Phone:* ${phone}\n\n*Project Details:*\n${message}\n\nPlease contact me to discuss further.`;            // Encode message for URL
             const encodedMessage = encodeURIComponent(whatsappMessage);
-            
+
             // Open WhatsApp with pre-filled message
             window.open(`https://wa.me/918012626222?text=${encodedMessage}`, '_blank');
-            
+
             // Optional: Reset form after submission
             contactForm.reset();
         });
